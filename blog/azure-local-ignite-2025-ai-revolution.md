@@ -27,34 +27,34 @@ If you run or build on Azure Local, here's what you need to know from this week'
 
 ### Azure AI Foundry Agent Service — Build and Run Agents On-Prem
 
-Azure AI Foundry Agent Service now supports **deploying, orchestrating, and monitoring AI agents locally on Azure Local** infrastructure—not just in public Azure regions. This lets enterprises build retrieval-augmented generation (RAG) apps, multi-agent pipelines, and bespoke LLM-powered automation entirely within their controlled, on-prem environment ([Microsoft Tech Community Blog: Foundry Agent Service at Ignite 2025](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-integrate/), [Azure Blog: Intelligent Cloud News Explained](https://azure.microsoft.com/en-us/blog/azure-at-microsoft-ignite-2025-all-the-intelligent-cloud-news-explained/), [AI, Cloud, and the Unified Agent Platform](https://www.efficientlyconnected.com/ai-cloud-and-the-emergence-of-microsofts-unified-agent-platform/)).
+Azure AI Foundry Agent Service now supports **deploying, orchestrating, and monitoring AI agents locally on Azure Local** infrastructure—not just in public Azure regions. This lets enterprises build retrieval-augmented generation (RAG) apps, multi-agent pipelines, and bespoke LLM-powered automation entirely within their controlled, on-prem environment [1][2][3].
 
 #### Highlights:
 - **Bring Your Own Model (BYOM):**
-  Deploy open-source models (Llama, Mistral, Stable Diffusion, etc.), custom LLMs, or enterprise-tuned models *locally* for inferencing and automation—with no cloud round-trip or dependency ([Agent Loop Ignite Update](https://techcommunity.microsoft.com/blog/integrationsonazureblog/%F0%9F%93%A2-agent-loop-ignite-update---new-set-of-ai-features-arrive-in-public-preview/), [What's new in Azure AI Foundry](https://www.linkedin.com/pulse/build-2025-whats-new-azure-ai-foundry-more-agents-scientific-gopal-yw4fc/)).
+  Deploy open-source models (Llama, Mistral, Stable Diffusion, etc.), custom LLMs, or enterprise-tuned models *locally* for inferencing and automation—with no cloud round-trip or dependency [4][5].
 - **Enterprise Data Grounding:**
-  Agents running on Azure Local with **Foundry IQ** (preview) can securely access and ground to enterprise knowledge sources—OneLake, SharePoint, Databricks, custom documents—making RAG and Retrieval workflows accessible on-prem ([Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/azure-at-microsoft-ignite-2025-all-the-intelligent-cloud-news-explained/)).
+  Agents running on Azure Local with **Foundry IQ** (preview) can securely access and ground to enterprise knowledge sources—OneLake, SharePoint, Databricks, custom documents—making RAG and Retrieval workflows accessible on-prem [2].
 - **Unified AgentOps & Observability:**
-  New builtin tracing, evaluation, and cost/safety monitoring integrated via Foundry and Azure Arc portals for all local agent and LLM tasks ([Microsoft Tech Community Blog: Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-integrate/)).
+  New builtin tracing, evaluation, and cost/safety monitoring integrated via Foundry and Azure Arc portals for all local agent and LLM tasks [1].
 - **Security & Compliance:**
-  Local deployments fully integrate with Microsoft Purview, meaning prompt data protection and operational compliance standards for agentic AI workflows in sensitive environments ([Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2025-book-of-news/)).
+  Local deployments fully integrate with Microsoft Purview, meaning prompt data protection and operational compliance standards for agentic AI workflows in sensitive environments [6].
 
 ---
 
 ## ⚡️ AI-Native Platform Features
 
 ### Massive Scale and Reliability for AI
-- **Rack-aware clustering** (preview): Partition clusters along rack boundaries to ensure agent workloads survive hardware failures ([What's new in hyperconverged deployments of Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2511), [Tech Community Blog: What's new in Azure Local](https://techcommunity.microsoft.com/blog/azurearcblog/what%E2%80%99s-new-in-azure-local-cloud-infrastructure-for-distributed-locations/)).
-- **10,000+ core and 100+ node clusters**: Easily scale out your AI training and inferencing workloads for real enterprise or service provider settings ([Tech Community Blog: What's new in Azure Local](https://techcommunity.microsoft.com/blog/azurearcblog/what%E2%80%99s-new-in-azure-local-cloud-infrastructure-for-distributed-locations/)).
-- **Hot-add memory to VMs**: Grow machine resources for AI tasks without taking them offline ([What's new in hyperconverged deployments of Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2511)).
+- **Rack-aware clustering** (preview): Partition clusters along rack boundaries to ensure agent workloads survive hardware failures [7][8].
+- **10,000+ core and 100+ node clusters**: Easily scale out your AI training and inferencing workloads for real enterprise or service provider settings [8].
+- **Hot-add memory to VMs**: Grow machine resources for AI tasks without taking them offline [7].
 
 ### Developer Velocity
 - **Unified SDK for Agents:**
-  Develop agents on your laptop/dev box using Microsoft's agent framework (open source SDK with Semantic Kernel + AutoGen), then push seamlessly to run on Azure Local or in cloud with consistent runtime semantics ([AI, Cloud, and the Unified Agent Platform](https://www.efficientlyconnected.com/ai-cloud-and-the-emergence-of-microsofts-unified-agent-platform/), [Agent Loop Ignite Update](https://techcommunity.microsoft.com/blog/integrationsonazureblog/%F0%9F%93%A2-agent-loop-ignite-update---new-set-of-ai-features-arrive-in-public-preview/)).
+  Develop agents on your laptop/dev box using Microsoft's agent framework (open source SDK with Semantic Kernel + AutoGen), then push seamlessly to run on Azure Local or in cloud with consistent runtime semantics [3][4].
 
 ### Migration & Modernization
 - **Azure Migrate Integration:**
-  Migrate legacy VMs, data, and workloads to Azure Local seamlessly, with support for agentic and AI-centric workflows, ensuring your infrastructure is ready for the next wave of automation ([Spirhed at Microsoft Ignite 2025: VM Migration to Azure Local](https://spirhed.com/microsoft-ignite-2025-spirhed/)).
+  Migrate legacy VMs, data, and workloads to Azure Local seamlessly, with support for agentic and AI-centric workflows, ensuring your infrastructure is ready for the next wave of automation [9].
 
 ---
 
@@ -70,16 +70,25 @@ Azure Local isn't just "cloud on your hardware"—it's now an **AI agent and LLM
 
 ---
 
-*References:*
-- [Microsoft Tech Community Blog: Foundry Agent Service at Ignite 2025](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-integrate/)
-- [Azure Blog: Intelligent Cloud News Explained](https://azure.microsoft.com/en-us/blog/azure-at-microsoft-ignite-2025-all-the-intelligent-cloud-news-explained/)
-- [What's new in hyperconverged deployments of Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2511)
-- [Tech Community Blog: What's new in Azure Local](https://techcommunity.microsoft.com/blog/azurearcblog/what%E2%80%99s-new-in-azure-local-cloud-infrastructure-for-distributed-locations/)
-- [Spirhed at Microsoft Ignite 2025: VM Migration to Azure Local](https://spirhed.com/microsoft-ignite-2025-spirhed/)
-- [Agent Loop Ignite Update](https://techcommunity.microsoft.com/blog/integrationsonazureblog/%F0%9F%93%A2-agent-loop-ignite-update---new-set-of-ai-features-arrive-in-public-preview/)
-- [AI, Cloud, and the Unified Agent Platform](https://www.efficientlyconnected.com/ai-cloud-and-the-emergence-of-microsofts-unified-agent-platform/)
-- [What's new in Azure AI Foundry](https://www.linkedin.com/pulse/build-2025-whats-new-azure-ai-foundry-more-agents-scientific-gopal-yw4fc/)
-- [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2025-book-of-news/)
+## References
+
+[1] [Microsoft Tech Community Blog: Foundry Agent Service at Ignite 2025](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agent-service-at-ignite-2025-simple-to-build-powerful-to-integrate/)
+
+[2] [Azure Blog: Intelligent Cloud News Explained](https://azure.microsoft.com/en-us/blog/azure-at-microsoft-ignite-2025-all-the-intelligent-cloud-news-explained/)
+
+[3] [AI, Cloud, and the Unified Agent Platform](https://www.efficientlyconnected.com/ai-cloud-and-the-emergence-of-microsofts-unified-agent-platform/)
+
+[4] [Agent Loop Ignite Update](https://techcommunity.microsoft.com/blog/integrationsonazureblog/%F0%9F%93%A2-agent-loop-ignite-update---new-set-of-ai-features-arrive-in-public-preview/)
+
+[5] [What's new in Azure AI Foundry](https://www.linkedin.com/pulse/build-2025-whats-new-azure-ai-foundry-more-agents-scientific-gopal-yw4fc/)
+
+[6] [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2025-book-of-news/)
+
+[7] [What's new in hyperconverged deployments of Azure Local?](https://learn.microsoft.com/en-us/azure/azure-local/whats-new?view=azloc-2511)
+
+[8] [Tech Community Blog: What's new in Azure Local](https://techcommunity.microsoft.com/blog/azurearcblog/what%E2%80%99s-new-in-azure-local-cloud-infrastructure-for-distributed-locations/)
+
+[9] [Spirhed at Microsoft Ignite 2025: VM Migration to Azure Local](https://spirhed.com/microsoft-ignite-2025-spirhed/)
 
 ---
 
