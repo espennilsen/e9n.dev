@@ -10,7 +10,8 @@
     "build": "npm run build:11ty && npm run build:css",
     "dev": "npm run build:css && npm-run-all --parallel watch:css watch:11ty",
     "watch:11ty": "eleventy --serve",
-    "serve": "npm run dev"
+    "serve": "npm run dev",
+    "preview": "npm run build && python3 -m http.server 8080 --directory _site"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
