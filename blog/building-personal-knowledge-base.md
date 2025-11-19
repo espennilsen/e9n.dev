@@ -15,9 +15,9 @@ featured: true
 
 # I Built a ChatGPT for My Brain (and It's Uncomfortably Accurate)
 
-I've been journaling in Obsidian for 4 years. 1,247 markdown files. Meeting notes, project ideas, random thoughts at 2 AM, book highlights, workout logs—everything.
+I've been journaling in Obsidian for a couple years now. Meeting notes, project ideas, random thoughts, book highlights—everything.
 
-Last month I connected it to Gemini 2.0 Flash. Now I can ask my past self questions.
+Recently I started playing with Gemini to query my notes. Now I can ask my past self questions.
 
 It's weird.
 
@@ -34,12 +34,12 @@ That was me, constantly. I had years of accumulated knowledge sitting in markdow
 ## The Setup
 
 Here's the stack:
-- **Obsidian vault** - 4 years of markdown notes
+- **Obsidian vault** - My markdown notes
 - **Python script** - Chunks and embeds notes using Gemini's embedding API
 - **ChromaDB** - Local vector database (runs on my laptop, no cloud)
 - **Gemini 2.0 Flash** - The actual Q&A interface
 
-The whole thing cost me $2.47 in API calls to set up. Ongoing cost is basically nothing because I'm using the free tier.
+Cost is minimal - mostly just API calls for embeddings. Gemini's free tier handles most of my usage.
 
 ## How It Actually Works
 
@@ -100,14 +100,12 @@ Two reasons:
 
 ## The Code
 
-I've open-sourced the whole setup. It's literally just:
+The setup is pretty straightforward:
 - Script to chunk markdown files
 - Embedding + ChromaDB storage
 - Simple Python CLI to query
 
-[Link to repo would go here]
-
-Takes about 30 minutes to set up if you have basic Python knowledge.
+I might clean it up and share it at some point, but right now it's a mess of hardcoded paths and hacky shortcuts that work for me.
 
 ## What I Learned
 

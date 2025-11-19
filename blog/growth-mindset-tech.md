@@ -12,58 +12,60 @@ readingTime: '6 min read'
 featured: false
 ---
 
-# The Day I Stopped Caring About AWS Outages
+# Why I'm Reading 2,000-Year-Old Philosophy for My Tech Career
 
-Last month, AWS went down during our product launch. Six months of work. Marketing campaign running. Demo scheduled with a Fortune 500 prospect in 2 hours.
+I'm a sales manager at Lenovo who codes on the side. Last week I was debugging why our internal dashboard was slow, and I could feel the stress building. Then I remembered something Marcus Aurelius wrote.
 
-I watched Slack explode. The CEO was pinging everyone. Engineering was scrambling. Sales was already drafting apology emails.
+"You have power over your mind - not outside events. Realize this, and you will find strength."
 
-And I felt... fine?
+It clicked.
 
 <!--excerpt-->
 
-## This Wasn't Always Me
+## The Problem with Tech Work
 
-Three years ago, I would've been the most stressed person in that room. Refreshing AWS status every 30 seconds. Drafting contingency plans. Catastrophizing about lost revenue.
+Everything in software is either broken or about to break. Dependencies get deprecated. APIs change. Someone else's code breaks your code.
 
-But somewhere between then and now, I read Marcus Aurelius. And more importantly, I actually got what he was saying.
+You can spend your entire career stressed about things that are fundamentally out of your control.
 
-## The Dichotomy of Control (But Real)
+Or you can stop.
 
-AWS being down? Not in my control.
+## The Dichotomy of Control (Applied to Code)
 
-Our error handling when AWS comes back up? Completely in my control.
+I can't control when a vendor's API goes down. I can control our error handling.
 
-The prospect rescheduling? Not in my control.
+I can't control when requirements change mid-sprint. I can control how I communicate realistic timelines.
 
-How I communicate the situation to them? Completely in my control.
+I can't control legacy code someone wrote 5 years ago. I can control the new code I write today.
 
-This sounds obvious when you read it. But actually internalizing it? That's different.
+This sounds obvious. But how many times have you refreshed a status page hoping it would magically fix itself?
 
-## What Changed
+## What This Looks Like in Practice
 
-I started a practice: Every sprint planning, I ask "What here is actually in our control?"
+Yesterday, a demo I was prepping failed because of an upstream service issue. The old me would have panicked and spent an hour trying to fix something I literally cannot fix.
 
-Product wants a feature that requires third-party API that doesn't exist yet? Out of our control. Can we control the fallback experience? Yes.
+Instead: I documented the failure, wrote a fallback demo script, and used the extra time to prep better talking points.
 
-Leadership wants faster delivery? We can't control their expectations. Can we control our communication about realistic timelines? Yes.
+The demo went fine. Better than fine, actually, because I was calm and prepared instead of stressed and winging it.
 
-## The Paradox
+## The Sales Connection
 
-Here's what's weird: Caring less about the uncontrollable made me better at my job.
+This applies even more in sales. You can't control whether a prospect signs. You can control your research, your pitch, and your follow-up.
 
-When AWS went down, I wasn't frozen by stress. I was writing the customer communication. I was checking our retry logic. I was doing what I could do.
+The moment I stopped trying to control outcomes and focused on controlling my inputs, my close rate actually went up.
 
-The CEO noticed. "You were the calmest person in the room."
+Stoicism isn't about not caring. It's about caring efficiently.
 
-Yeah, because I was the only one working on things I could actually fix.
+## Reading List
 
-## Not Apathy
+If this resonates, start here:
+- **Meditations** by Marcus Aurelius (the OG)
+- **The Daily Stoic** by Ryan Holiday (more digestible)
 
-This isn't about not caring. It's about directing your care toward things that respond to care.
+Both are short. Both are practical. Both will change how you think about work stress.
 
-Code quality responds to care. Test coverage responds to care. Clear communication responds to care.
+## The Takeaway
 
-AWS uptime? Doesn't give a damn what you think about it.
+Focus on what you can control. Let go of what you can't.
 
-Focus accordingly.
+Your code will be better. Your stress will be lower. And ironically, the outcomes you can't control will probably improve too.

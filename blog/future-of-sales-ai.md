@@ -13,11 +13,11 @@ readingTime: '5 min read'
 featured: true
 ---
 
-# I Let GPT-4 Write My Cold Emails for a Month
+# I Let Copilot Write My Cold Emails for a Month
 
 Here's what I learned: AI makes bad salespeople worse and good salespeople dangerous.
 
-Last quarter, I ran an experiment. I fed GPT-4 every piece of public information about my target accounts—LinkedIn posts, company news, funding announcements, tech stack from job postings—and had it draft personalized cold emails.
+I've been at Lenovo for a while now, managing a team that sells enterprise hardware. Recently, I started experimenting with GitHub Copilot for sales research—yeah, the coding tool. Turns out it's pretty good at drafting cold emails too when you feed it context.
 
 The results surprised me.
 
@@ -33,7 +33,7 @@ The AI was good at mimicking personalization. But it wasn't actually personal.
 
 ## The Problem With AI-Generated Outreach
 
-GPT-4 read that a company just raised Series B funding. So it wrote: "Congrats on the Series B! Given your growth trajectory..."
+Copilot read that a company just raised Series B funding. So it wrote: "Congrats on the Series B! Given your growth trajectory..."
 
 Here's what's wrong with that: Every salesperson and their AI is sending the same "congrats on the Series B" email.
 
@@ -43,9 +43,9 @@ The noise got louder, not clearer.
 
 Research. Oh my god, the research.
 
-I now have a Claude project that ingests a company's last 10 blog posts, recent LinkedIn activity, and Glassdoor reviews. It gives me a summary in 30 seconds that would've taken me 2 hours.
+I use Copilot to analyze a company's recent blog posts, LinkedIn activity, and tech stack. It gives me a summary in 30 seconds that would've taken me an hour of manual digging.
 
-But the email? I write that myself.
+But the email? I write that myself now.
 
 Because AI can tell me WHAT to know. But it can't tell me HOW to care.
 
