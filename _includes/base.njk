@@ -118,31 +118,32 @@
         gsap.from(element, {
           scrollTrigger: {
             trigger: element,
-            start: 'top 85%',
+            start: 'top 95%',
             toggleActions: 'play none none none'
           },
-          y: 60,
+          y: 30,
           opacity: 0,
-          duration: 1,
-          ease: 'power3.out',
-          delay: index * 0.1
+          duration: 0.5,
+          ease: 'power2.out',
+          delay: index * 0.05
         });
       });
 
       // Stagger animation for cards/grid items
       gsap.utils.toArray('.animate-stagger').forEach((container) => {
         const items = container.children;
+        gsap.set(items, { opacity: 1 }); // Ensure visible by default
         gsap.from(items, {
           scrollTrigger: {
             trigger: container,
-            start: 'top 85%',
+            start: 'top 95%',
             toggleActions: 'play none none none'
           },
-          y: 40,
+          y: 20,
           opacity: 0,
-          duration: 0.8,
-          stagger: 0.15,
-          ease: 'power3.out'
+          duration: 0.4,
+          stagger: 0.08,
+          ease: 'power2.out'
         });
       });
 
@@ -151,13 +152,13 @@
         gsap.from(element, {
           scrollTrigger: {
             trigger: element,
-            start: 'top 85%',
+            start: 'top 95%',
             toggleActions: 'play none none none'
           },
-          scale: 0.9,
+          scale: 0.95,
           opacity: 0,
-          duration: 1,
-          ease: 'power3.out'
+          duration: 0.5,
+          ease: 'power2.out'
         });
       });
 
@@ -166,13 +167,13 @@
         gsap.from(element, {
           scrollTrigger: {
             trigger: element,
-            start: 'top 85%',
+            start: 'top 95%',
             toggleActions: 'play none none none'
           },
-          x: -60,
+          x: -30,
           opacity: 0,
-          duration: 1,
-          ease: 'power3.out'
+          duration: 0.5,
+          ease: 'power2.out'
         });
       });
 
@@ -181,13 +182,13 @@
         gsap.from(element, {
           scrollTrigger: {
             trigger: element,
-            start: 'top 85%',
+            start: 'top 95%',
             toggleActions: 'play none none none'
           },
-          x: 60,
+          x: 30,
           opacity: 0,
-          duration: 1,
-          ease: 'power3.out'
+          duration: 0.5,
+          ease: 'power2.out'
         });
       });
     });
