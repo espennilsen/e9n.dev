@@ -13,7 +13,7 @@ status: live
 featured: true
 ---
 
-# ComfyUI Cheatsheets
+# ComfyUI Cheatsheet
 
 The comprehensive reference guide for ComfyUI nodes, workflows, and keyboard shortcuts. Streamlining the Stable Diffusion creative process.
 
@@ -34,4 +34,4 @@ Built with modern web technologies for speed and accessibility. The site is full
 
 ## Links
 
-[Visit ComfyUI Cheatsheets](https://comfyui-cheatsheet.com)
+[Visit ComfyUI Cheatsheet](https://comfyui-cheatsheet.com)
