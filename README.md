@@ -55,26 +55,6 @@ e9n.dev/
 
 This site automatically deploys to GitHub Pages via GitHub Actions when pushing to the `main` branch.
 
-### GitHub Pages Setup
-
-1. Go to your repository Settings → Pages
-2. Set Source to "GitHub Actions"
-3. The workflow will automatically build and deploy on push
-
-### Custom Domain Setup
-
-The site is configured for the custom domain `e9n.dev`:
-
-1. Add your domain in GitHub repository settings (Settings → Pages → Custom domain)
-2. Configure DNS records with your domain provider:
-   - Add an `A` record pointing to GitHub Pages IPs:
-     - `185.199.108.153`
-     - `185.199.109.153`
-     - `185.199.110.153`
-     - `185.199.111.153`
-   - Or add a `CNAME` record pointing to `<username>.github.io`
-
-The `CNAME` file ensures your custom domain persists after each deployment.
 
 ## 🛠️ Development
 
@@ -93,16 +73,30 @@ Create a new Markdown file in the `blog/` directory:
 
 ```markdown
 ---
+layout: post.njk
 title: "Your Post Title"
-date: 2024-01-15
-category: "AI Deep Dives"
-tags: ["AI", "Tutorial"]
-readingTime: "5 min read"
 excerpt: "Brief description of your post"
+date: 2024-01-15
+category: "AI"
+tags:
+  - AI
+  - Tutorial
+readingTime: "5 min read"
+featured: false
+draft: true
 ---
 
 Your blog post content here...
 ```
+
+#### Draft Posts
+
+Posts marked with `draft: true` will:
+- ✅ **Appear in development** (`npm run dev`) with a visible DRAFT badge
+- ❌ **Be excluded from production builds** (`npm run build`)
+- ❌ **Not be deployed** to the live site via GitHub Actions
+
+To publish a post, simply remove the `draft: true` line from the front matter.
 
 ### Adding Icons
 
@@ -114,4 +108,4 @@ Add new SVG icons to `_includes/icons/` and reference them in templates:
 
 ## 📝 License
 
-© 2024 e9n.dev. All rights reserved.
+© 2025 e9n.dev. All rights reserved.
