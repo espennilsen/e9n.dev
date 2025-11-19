@@ -2,7 +2,7 @@
 layout: post.njk
 title: 'Building a Second Brain with Obsidian & Gemini'
 excerpt: 'A technical deep dive into connecting your local markdown notes with Google''s Gemini API for semantic search.'
-date: 2024-11-10
+date: 2025-01-09
 category: 'Tutorials'
 tags:
   - Productivity

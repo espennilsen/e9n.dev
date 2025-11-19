@@ -2,7 +2,7 @@
 layout: post.njk
 title: 'The Future of Sales is AI-Augmented'
 excerpt: 'How Large Language Models are transforming the SDR workflow and why human empathy is becoming more valuable than ever.'
-date: 2024-11-16
+date: 2025-01-16
 category: 'Sales + AI'
 tags:
   - AI
@@ -17,7 +17,7 @@ featured: true
 
 Here's what I learned: AI makes bad salespeople worse and good salespeople dangerous.
 
-I've been at Lenovo for a while now, managing a team that sells enterprise hardware. Recently, I started experimenting with GitHub Copilot for sales research—yeah, the coding tool. Turns out it's pretty good at drafting cold emails too when you feed it context.
+I've been at Lenovo for a while now, managing a team that sells enterprise hardware. Recently, I started experimenting with M365 Copilot for sales research. Turns out it's pretty good at drafting cold emails too when you feed it context.
 
 The results surprised me.
 
@@ -43,7 +43,7 @@ The noise got louder, not clearer.
 
 Research. Oh my god, the research.
 
-I use Copilot to analyze a company's recent blog posts, LinkedIn activity, and tech stack. It gives me a summary in 30 seconds that would've taken me an hour of manual digging.
+I use M365 Copilot to analyze a company's recent blog posts, LinkedIn activity, and tech stack. It gives me a summary in 30 seconds that would've taken me an hour of manual digging.
 
 But the email? I write that myself now.
 

@@ -2,7 +2,7 @@
 layout: post.njk
 title: 'Stoicism for Software Engineers'
 excerpt: 'Applying ancient philosophy to modern technical debt and sprint planning.'
-date: 2024-11-02
+date: 2025-01-02
 category: 'Growth Mindset'
 tags:
   - Philosophy

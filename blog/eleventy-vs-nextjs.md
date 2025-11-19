@@ -2,7 +2,7 @@
 layout: post.njk
 title: 'Why I Chose Eleventy (Simulated) for this Blog'
 excerpt: 'Static Site Generators are making a comeback. Here is why simpler is often better for content sites.'
-date: 2024-10-27
+date: 2024-12-26
 category: 'Tool Reviews'
 tags:
   - Web Dev
