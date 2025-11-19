@@ -24,15 +24,15 @@ permalink: /about/
 
       <div class="space-y-4 text-sm text-muted font-mono">
         <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          {% include "icons/map-pin.svg" %}
           Oslo, Norway
         </div>
         <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          {% include "icons/briefcase.svg" %}
           Sr. Sales Manager @ Lenovo
         </div>
         <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          {% include "icons/mail.svg" %}
           blog@e9n.dev
         </div>
       </div>
@@ -40,7 +40,7 @@ permalink: /about/
       <div class="mt-8">
         <a href="#" class="w-full px-6 py-3 rounded font-medium transition-all duration-300 flex items-center justify-center gap-2 group bg-primary text-black hover:bg-primary/90 shadow-[0_0_20px_rgba(0,255,136,0.3)] hover:shadow-[0_0_30px_rgba(0,255,136,0.5)]">
           Download CV
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <span class="group-hover:translate-x-1 transition-transform">{% include "icons/arrow-right.svg" %}</span>
         </a>
       </div>
     </div>
