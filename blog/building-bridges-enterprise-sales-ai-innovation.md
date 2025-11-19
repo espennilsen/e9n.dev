@@ -11,7 +11,7 @@ tags:
   - Innovation
 readingTime: "4 min read"
 featured: true
-draft: false
+draft: true
 ---
 
 # Hello, I'm Espen Nilsen
