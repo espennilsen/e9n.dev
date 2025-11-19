@@ -1,13 +1,13 @@
 ---
 layout: base.njk
-title: 'ComfyUI Cheatsheets'
+title: 'ComfyUI Cheatsheet'
 excerpt: 'The comprehensive reference guide for ComfyUI nodes, workflows, and keyboard shortcuts.'
 date: 2024-12-01
 tech:
   - Stable Diffusion
   - ComfyUI
   - Documentation
-link: https://comfyui-cheatsheets.com
+link: https://comfyui-cheatsheet.com
 image: https://picsum.photos/id/250/600/400
 status: live
 featured: true
@@ -34,4 +34,4 @@ Built with modern web technologies for speed and accessibility. The site is full
 
 ## Links
 
-[Visit ComfyUI Cheatsheets](https://comfyui-cheatsheets.com)
+[Visit ComfyUI Cheatsheets](https://comfyui-cheatsheet.com)
