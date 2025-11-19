@@ -14,16 +14,16 @@ permalink: /projects/
   </div>
 
   <div class="grid md:grid-cols-2 gap-8 animate-stagger">
-    {%- for project in projects -%}
+    {%- for project in collections.projects -%}
     <div class="group bg-surface rounded-xl overflow-hidden border border-border hover:border-primary/50 transition-all">
       <div class="h-48 bg-zinc-900 overflow-hidden relative">
         <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent z-10"></div>
         <img
-          src="{{ project.image }}"
-          alt="{{ project.title }}"
-          class="w-full h-full object-cover transition-all duration-500 {% if project.status == 'coming-soon' %}opacity-40 grayscale{% else %}opacity-60 group-hover:opacity-80 group-hover:scale-105{% endif %}"
+          src="{{ project.data.image }}"
+          alt="{{ project.data.title }}"
+          class="w-full h-full object-cover transition-all duration-500 {% if project.data.status == 'coming-soon' %}opacity-40 grayscale{% else %}opacity-60 group-hover:opacity-80 group-hover:scale-105{% endif %}"
         />
-        {%- if project.status == 'coming-soon' -%}
+        {%- if project.data.status == 'coming-soon' -%}
         <div class="absolute inset-0 flex items-center justify-center z-20">
           <span class="px-3 py-1 bg-zinc-900/80 border border-yellow-500/30 text-yellow-500 text-xs font-mono uppercase tracking-widest rounded backdrop-blur-sm">
             Coming Soon
@@ -34,25 +34,25 @@ permalink: /projects/
       <div class="p-6 relative z-20 -mt-12">
         <div class="bg-surface p-4 rounded-lg border border-border shadow-lg">
           <h3 class="text-xl font-bold mb-2 flex justify-between items-center text-text">
-            {{ project.title }}
+            {{ project.data.title }}
             <div class="flex gap-3">
-              {%- if project.github -%}
-              <a href="{{ project.github }}" class="text-muted hover:text-text">
+              {%- if project.data.github -%}
+              <a href="{{ project.data.github }}" class="text-muted hover:text-text">
                 {% include "icons/github.svg" %}
               </a>
               {%- endif -%}
-              {%- if project.status != 'coming-soon' -%}
-              <a href="{{ project.link }}" class="text-muted hover:text-primary">
+              {%- if project.data.status != 'coming-soon' -%}
+              <a href="{{ project.data.link }}" class="text-muted hover:text-primary">
                 {% include "icons/external-link.svg" %}
               </a>
               {%- endif -%}
             </div>
           </h3>
           <p class="text-muted text-sm mb-4">
-            {{ project.description }}
+            {{ project.data.excerpt }}
           </p>
           <div class="flex flex-wrap gap-2">
-            {%- for tech in project.tech -%}
+            {%- for tech in project.data.tech -%}
             <span class="text-xs font-mono text-secondary bg-secondary/10 px-2 py-1 rounded">
               {{ tech }}
             </span>

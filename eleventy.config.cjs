@@ -64,6 +64,12 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // Collection for projects
+  eleventyConfig.addCollection('projects', (collectionApi) => {
+    return collectionApi.getFilteredByGlob('projects/*.md')
+      .sort((a, b) => b.date - a.date);
+  });
+
   // Pass through copy for static assets - copy source CSS
   eleventyConfig.addPassthroughCopy('css');
 
