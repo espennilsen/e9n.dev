@@ -64,8 +64,13 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
-  // Pass through copy for static assets
+  // Pass through copy for static assets - copy source CSS
   eleventyConfig.addPassthroughCopy('css');
+
+  // Don't delete CSS from output on rebuild
+  eleventyConfig.setServerOptions({
+    domdiff: false
+  });
 
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget('css/**/*.css');
