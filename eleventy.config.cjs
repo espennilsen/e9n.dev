@@ -19,11 +19,10 @@ module.exports = function(eleventyConfig) {
   // Computed data to exclude drafts from production builds
   eleventyConfig.addGlobalData('eleventyComputed', {
     permalink: (data) => {
-      // If it's a draft and we're in production, don't generate the page
+      // If it's a draft and we're in production, don't build the page
       if (data.draft && process.env.NODE_ENV === 'production') {
         return false;
       }
-      // Otherwise use the default permalink (or undefined to let 11ty handle it)
       return data.permalink;
     },
     eleventyExcludeFromCollections: (data) => {

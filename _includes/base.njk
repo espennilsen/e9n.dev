@@ -23,8 +23,8 @@
           <span class="text-primary mr-1">{% if page.url == '/' %}>{% else %}#{% endif %}</span>
           Home
         </a>
-        <a href="/blog/" class="text-sm uppercase tracking-widest font-mono transition-colors {% if '/blog/' in page.url %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
-          <span class="text-primary mr-1">{% if '/blog/' in page.url %}>{% else %}#{% endif %}</span>
+        <a href="/blog/" class="text-sm uppercase tracking-widest font-mono transition-colors {% if page.url and '/blog/' in page.url %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
+          <span class="text-primary mr-1">{% if page.url and '/blog/' in page.url %}>{% else %}#{% endif %}</span>
           Blog
         </a>
         <a href="/projects/" class="text-sm uppercase tracking-widest font-mono transition-colors {% if page.url == '/projects/' %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
@@ -56,8 +56,8 @@
         <span class="text-primary mr-1">{% if page.url == '/' %}>{% else %}#{% endif %}</span>
         Home
       </a>
-      <a href="/blog/" class="block text-2xl py-4 font-mono transition-colors {% if '/blog/' in page.url %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
-        <span class="text-primary mr-1">{% if '/blog/' in page.url %}>{% else %}#{% endif %}</span>
+      <a href="/blog/" class="block text-2xl py-4 font-mono transition-colors {% if page.url and '/blog/' in page.url %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
+        <span class="text-primary mr-1">{% if page.url and '/blog/' in page.url %}>{% else %}#{% endif %}</span>
         Blog
       </a>
       <a href="/projects/" class="block text-2xl py-4 font-mono transition-colors {% if page.url == '/projects/' %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
