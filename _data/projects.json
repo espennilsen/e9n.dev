@@ -1,0 +1,39 @@
+[
+  {
+    "id": "comfyui",
+    "title": "ComfyUI Cheatsheets",
+    "description": "The comprehensive reference guide for ComfyUI nodes, workflows, and keyboard shortcuts. Streamlining the Stable Diffusion creative process.",
+    "tech": ["Stable Diffusion", "ComfyUI", "Documentation"],
+    "link": "https://comfyui-cheatsheets.com",
+    "image": "https://picsum.photos/id/250/600/400"
+  },
+  {
+    "id": "x10s",
+    "title": "x10s",
+    "description": "An advanced AI Sandbox environment designed to orchestrate and run parallel autonomous agents. Built with React, TypeScript and PostgreSQL to handle high-performance multi-agent workflows and emergent behaviors.",
+    "tech": ["React", "TypeScript", "PostgreSQL", "AI Agents"],
+    "link": "#",
+    "image": "https://picsum.photos/id/532/600/400",
+    "status": "coming-soon"
+  },
+  {
+    "id": "1",
+    "title": "SalesGPT Agent",
+    "description": "An autonomous agent that researches leads and drafts personalized outreach emails using Gemini Pro.",
+    "tech": ["Python", "LangChain", "Gemini API"],
+    "link": "#",
+    "github": "https://github.com",
+    "image": "https://picsum.photos/id/1/600/400",
+    "status": "coming-soon"
+  },
+  {
+    "id": "3",
+    "title": "Smart Journal",
+    "description": "An intelligent agent built with the Claude Agent SDK to manage, organize, and query Obsidian journal entries through natural language.",
+    "tech": ["Claude Agent SDK", "Obsidian", "TypeScript"],
+    "link": "#",
+    "github": "https://github.com",
+    "image": "https://picsum.photos/id/180/600/400",
+    "status": "coming-soon"
+  }
+]

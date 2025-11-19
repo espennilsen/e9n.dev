@@ -9,6 +9,8 @@ node_modules/
 # Production
 dist/
 build/
+_site/
+public/
 
 # Environment variables
 .env

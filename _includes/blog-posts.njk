@@ -1,0 +1,19 @@
+---
+permalink: /blog-data.json
+---
+{%- set posts = collections.posts -%}
+[
+{%- for post in posts -%}
+  {
+    "slug": "{{ post.fileSlug }}",
+    "title": {{ post.data.title | dump | safe }},
+    "excerpt": {{ post.data.excerpt | dump | safe }},
+    "date": "{{ post.date | date('YYYY-MM-DD') }}",
+    "category": {{ post.data.category | dump | safe }},
+    "tags": {{ post.data.tags | dump | safe }},
+    "readingTime": {{ post.data.readingTime | dump | safe }},
+    "featured": {{ post.data.featured }},
+    "content": {{ post.templateContent | postContent | dump | safe }}
+  }{{ "," if not loop.last }}
+{%- endfor -%}
+]

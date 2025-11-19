@@ -4,20 +4,30 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build:css": "npx tailwindcss -i ./css/styles.css -o ./_site/css/styles.css --minify",
+    "build:11ty": "eleventy",
+    "build": "npm run build:11ty && npm run build:css",
+    "dev": "npm run build",
+    "serve": "eleventy --serve",
+    "watch": "eleventy --watch"
   },
   "dependencies": {
-    "lucide-react": "^0.554.0",
-    "react-dom": "^19.2.0",
-    "react": "^19.2.0",
     "framer-motion": "^12.23.24",
+    "lucide-react": "^0.554.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.6"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@tailwindcss/cli": "^4.1.17",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.22",
+    "markdown-it": "^14.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
