@@ -15,7 +15,7 @@ featured: true
 
 # I Built a ChatGPT for My Brain (and It's Uncomfortably Accurate)
 
-I've been journaling in Obsidian for a couple years now. Meeting notes, project ideas, random thoughts, book highlights—everything.
+I've been journaling in Obsidian for a couple years now. Personal projects, self-development notes, book highlights, random ideas—everything.
 
 Recently I started playing with Gemini to query my notes. Now I can ask my past self questions.
 
@@ -68,13 +68,13 @@ Nothing fancy. Embed the notes, store in vector DB, query with cosine similarity
 
 ## What I Actually Use It For
 
-**"What was the outcome of that customer call with Acme Corp last quarter?"**
+**"What side projects have I started but never finished?"**
 
-Pulls up my meeting notes from July. Turns out we discussed pricing and I noted they'd circle back in Q4. It's Q4 now. I would've completely forgotten.
+Pulls up 8 different project ideas from the last year. Three of them were actually the same idea approached from different angles. I would've started a ninth attempt if I hadn't checked.
 
-**"What books have I read about negotiation?"**
+**"What books have I read about habit formation?"**
 
-Lists 6 books with highlights and my notes. I didn't remember half of them.
+Lists 4 books with highlights and my notes. Plus it connected the dots between concepts I'd highlighted in different books months apart.
 
 **"When was the last time I had a good workout week?"**
 
@@ -84,9 +84,9 @@ This one hurt. It's been 7 weeks. My past self is calling me out.
 
 The AI version of my notes is sometimes better at remembering my ideas than I am.
 
-I asked it: "What's my long-term career plan?"
+I asked it: "What do I actually want to learn next?"
 
-It synthesized themes from 2 years of scattered journal entries and gave me a more coherent answer than I could've articulated myself.
+It synthesized themes from 2 years of scattered journal entries—project ideas, book notes, random 2 AM thoughts—and gave me a more coherent answer than I could've articulated myself.
 
 That's both powerful and slightly horrifying.
 
