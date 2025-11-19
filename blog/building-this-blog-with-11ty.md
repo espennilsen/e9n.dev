@@ -2,7 +2,7 @@
 layout: post.njk
 title: 'Building This Blog with 11ty and Claude Code'
 excerpt: 'How I went from idea to deployed blog in a few hours using Claude Code, 11ty, and GitHub Pages. Plus lessons learned and what''s coming next.'
-date: 2025-01-19
+date: 2025-11-19
 category: 'Web Dev'
 tags:
   - 11ty
@@ -41,7 +41,7 @@ I've used Claude Code on other projects before, but this was a good test of how 
 
 The speed of iteration was incredible. I could describe what I wanted, watch it get built, then immediately refine it. No context switching between coding and designing. Just a conversation that produced working code.
 
-When I asked about static site generators, Claude Code didn't just suggest 11ty - it explained the trade-offs between 11ty, Next.js, and Gatsby in the context of what I was actually building. That kind of contextual reasoning made the recommendation feel trustworthy.
+When I asked about static site generators, Claude Code didn't just suggest 11ty: it explained the trade-offs between 11ty, Next.js, and Gatsby in the context of what I was actually building. That kind of contextual reasoning made the recommendation feel trustworthy.
 
 I made mistakes along the way. At one point I accidentally deleted my 11ty templates thinking they were old Vite files from a previous setup. Claude Code caught it, restored them from git, and we kept moving. No panic, no lost work.
 
@@ -57,7 +57,7 @@ Git became my safety net. Claude Code commits frequently, which meant when somet
 
 ### Unexpected Benefits
 
-I learned more about 11ty's architecture by watching Claude Code build it than I would have from just reading documentation. Seeing the patterns emerge in real-time - how data files work, how layouts cascade, how filters transform content - made everything click in a way tutorials never did.
+I learned more about 11ty's architecture by watching Claude Code build it than I would have from just reading documentation. Seeing the patterns emerge in real-time: how data files work, how layouts cascade, how filters transform content, made everything click in a way tutorials never did.
 
 I also ended up with a deployment pipeline I actually understand. It's not magic anymore. It's just GitHub Actions running `npm run build` and pushing the output to the right branch. Simple, transparent, easy to modify if I need to.
 
@@ -65,7 +65,7 @@ I also ended up with a deployment pipeline I actually understand. It's not magic
 
 The project started with converting a React/Vite starter into an 11ty site. That meant ripping out all the client-side routing, component logic, and build complexity, replacing it with simple templates and markdown files.
 
-Then came styling. I set up Tailwind CSS with a custom dark theme, tweaking colors and spacing until everything felt right. The content structure emerged naturally - blog posts live in markdown files, static pages use Nunjucks templates.
+Then came styling. I set up Tailwind CSS with a custom dark theme, tweaking colors and spacing until everything felt right. The content structure emerged naturally: blog posts live in markdown files, static pages use Nunjucks templates.
 
 Once the basics worked, I added GSAP for scroll-triggered animations. Subtle fade-ins and stagger effects that make the site feel more alive without being distracting.
 
@@ -85,13 +85,13 @@ Search functionality would be nice too. Probably something client-side like Lunr
 
 I'm thinking about adding a reading progress indicator for longer posts. It's a small UI detail, but it helps readers know how much is left. And I'll need proper code syntax highlighting since I plan to write technical posts with code examples.
 
-Longer-term, I want to make tags and categories actually functional instead of just decorative. Right now they're labels. Eventually they should filter and organize content. Related posts at the end of each article would be good too - help readers discover more without leaving the site.
+Longer-term, I want to make tags and categories actually functional instead of just decorative. Right now they're labels. Eventually they should filter and organize content. Related posts at the end of each article would be good too: help readers discover more without leaving the site.
 
 The theme is hardcoded to dark right now because that's what I prefer. But I should probably add a toggle. Some people like light themes, and it's a better default for accessibility.
 
 Newsletter integration is on my radar. Maybe Buttondown or ConvertKit for email subscribers. Not urgent, but once there's enough content, it makes sense to let people subscribe.
 
-Content-wise, I want to write about how I'm using M365 Copilot at Lenovo for sales research. There's a lot happening there that isn't getting talked about outside of sales circles. Personal knowledge management is another area - I keep two Obsidian vaults. One for work that lives in OneDrive on my company laptop, and one personal vault where I can experiment with AI tools like Gemini. And I'll write about self-development stuff: Stoicism, habit formation, growth mindset.
+Content-wise, I want to write about how I'm using M365 Copilot at Lenovo for sales research. There's a lot happening there that isn't getting talked about outside of sales circles. Personal knowledge management is another area: I keep two Obsidian vaults. One for work that lives in OneDrive on my company laptop, and one personal vault where I can experiment with AI tools like Gemini. And I'll write about self-development stuff: Stoicism, habit formation, growth mindset.
 
 Side projects will show up too, whatever I'm building or learning at the time. The goal is one post per week. That feels sustainable without sacrificing quality.
 
@@ -107,7 +107,7 @@ Own your platform. I could've used Medium or Substack, but then I'd be renting. 
 
 ## The Numbers
 
-For transparency, hosting costs nothing. GitHub Pages is free. The domain runs about $12 per year, which works out to $1 per month. Development took a few hours in one evening. Maintenance is basically zero—there's no database to back up, no plugins to update, no security patches to install.
+For transparency, hosting costs nothing. GitHub Pages is free. The domain runs about $12 per year, which works out to $1 per month. Development took a few hours in one evening. Maintenance is basically zero; there's no database to back up, no plugins to update, no security patches to install.
 
 Compare that to a WordPress site with hosting fees, or a Webflow subscription at $15-30 per month. There's no contest. Static sites win on cost alone, and that's before you factor in speed and reliability.
 
@@ -129,4 +129,4 @@ I wanted a place to share ideas. Now I have one.
 
 Version 1.0 is live. Version 1.1 will come when I need it.
 
-That's the beauty of owning your stack - you can iterate forever.
+That's the beauty of owning your stack: you can iterate forever.
