@@ -73,6 +73,9 @@ module.exports = function(eleventyConfig) {
   // Pass through copy for static assets - copy source CSS
   eleventyConfig.addPassthroughCopy('css');
 
+  // Pass through copy for static files (images, etc.)
+  eleventyConfig.addPassthroughCopy('static');
+
   // Don't delete CSS from output on rebuild
   eleventyConfig.setServerOptions({
     domdiff: false
