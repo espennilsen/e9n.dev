@@ -33,6 +33,8 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          NODE_ENV: production
 
       - name: Copy CNAME to _site
         run: cp CNAME _site/CNAME
