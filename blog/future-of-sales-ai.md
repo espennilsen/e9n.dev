@@ -13,24 +13,62 @@ readingTime: '5 min read'
 featured: true
 ---
 
-# The Future of Sales is AI-Augmented
+# I Let GPT-4 Write My Cold Emails for a Month
 
-The landscape of B2B sales is shifting beneath our feet. It's no longer about who can spam the most emails; it's about who can leverage intelligence to build genuine connections at scale.
+Here's what I learned: AI makes bad salespeople worse and good salespeople dangerous.
+
+Last quarter, I ran an experiment. I fed GPT-4 every piece of public information about my target accounts—LinkedIn posts, company news, funding announcements, tech stack from job postings—and had it draft personalized cold emails.
+
+The results surprised me.
 
 <!--excerpt-->
 
-## The Shift
-Traditionally, Sales Development Representatives (SDRs) spent 40% of their time researching and 60% crafting generic outreach. With tools like Gemini and GPT-4, that ratio is flipping.
+## What Actually Happened
 
-### Key Benefits
-1. **Hyper-personalization**: AI analyzes prospect news, funding rounds, and LinkedIn posts to craft openers.
-2. **Intent Detection**: Predictive models scoring leads based on subtle buying signals.
-3. **Role Evolution**: SDRs are becoming "Prompt Engineers of Persuasion".
+Week 1: Reply rate jumped from 8% to 23%. I felt like I'd discovered a cheat code.
 
-## The Human Element
-Paradoxically, as AI handles the logic and data processing, the *human* element—empathy, tone, and trust—becomes the premium currency. AI opens the door; you have to walk through it.
+Week 2: Quality of replies tanked. People were responding, sure. But with "not interested" or "remove me from your list."
 
-> "AI won't replace sales leaders. Sales leaders who use AI will replace those who don't."
+The AI was good at mimicking personalization. But it wasn't actually personal.
 
-## Practical Steps
-Start by automating your research phase. Use agents to summarize annual reports of your target accounts.
+## The Problem With AI-Generated Outreach
+
+GPT-4 read that a company just raised Series B funding. So it wrote: "Congrats on the Series B! Given your growth trajectory..."
+
+Here's what's wrong with that: Every salesperson and their AI is sending the same "congrats on the Series B" email.
+
+The noise got louder, not clearer.
+
+## Where AI Actually Helps
+
+Research. Oh my god, the research.
+
+I now have a Claude project that ingests a company's last 10 blog posts, recent LinkedIn activity, and Glassdoor reviews. It gives me a summary in 30 seconds that would've taken me 2 hours.
+
+But the email? I write that myself.
+
+Because AI can tell me WHAT to know. But it can't tell me HOW to care.
+
+## The New Playbook
+
+My SDRs now spend 80% of their time on calls and relationship-building. AI handles the grunt work:
+- Summarizing annual reports
+- Tracking account changes
+- Scoring leads based on buying signals
+- Drafting first-pass research briefs
+
+But the human touch? That's where we win deals.
+
+## The Uncomfortable Truth
+
+AI won't replace salespeople. But salespeople who think they can use AI to avoid doing the hard work of genuinely understanding their customers? They're toast.
+
+The bar just got higher. AI made the basics table stakes. Now you have to actually be good at the human part.
+
+## What I'm Doing Now
+
+Using AI to compress the research phase from hours to minutes. Then spending those saved hours actually talking to people.
+
+The companies that figure this out first? They're going to clean up.
+
+The ones that use AI to send more spray-and-pray emails? They're going to get filtered even harder than before.
