@@ -36,7 +36,7 @@ permalink: /projects/
           <h3 class="text-xl font-bold mb-2 flex justify-between items-center text-text">
             {{ project.data.title }}
             <div class="flex gap-3">
-              {%- if project.data.github -%}
+              {%- if project.data.github and project.data.status != 'coming-soon' -%}
               <a href="{{ project.data.github }}" class="text-muted hover:text-text">
                 {% include "icons/github.svg" %}
               </a>

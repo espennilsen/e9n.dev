@@ -11,6 +11,30 @@ module.exports = function(eleventyConfig) {
     currentYear: () => new Date().getFullYear()
   });
 
+  // Make environment available in templates
+  eleventyConfig.addGlobalData('env', {
+    NODE_ENV: process.env.NODE_ENV || 'development'
+  });
+
+  // Computed data to exclude drafts from production builds
+  eleventyConfig.addGlobalData('eleventyComputed', {
+    permalink: (data) => {
+      // If it's a draft and we're in production, don't generate the page
+      if (data.draft && process.env.NODE_ENV === 'production') {
+        return false;
+      }
+      // Otherwise use the default permalink (or undefined to let 11ty handle it)
+      return data.permalink;
+    },
+    eleventyExcludeFromCollections: (data) => {
+      // Exclude drafts from collections in production
+      if (data.draft && process.env.NODE_ENV === 'production') {
+        return true;
+      }
+      return data.eleventyExcludeFromCollections || false;
+    }
+  });
+
   // Custom filter to extract excerpt from content
   eleventyConfig.addFilter('excerpt', (content) => {
     if (!content) return '';
@@ -60,8 +84,17 @@ module.exports = function(eleventyConfig) {
 
   // Collection for blog posts
   eleventyConfig.addCollection('posts', (collectionApi) => {
-    return collectionApi.getFilteredByGlob('blog/*.md')
-      .sort((a, b) => b.date - a.date);
+    const posts = collectionApi.getFilteredByGlob('blog/*.md');
+
+    // Filter out drafts in production
+    if (process.env.NODE_ENV === 'production') {
+      return posts
+        .filter(post => !post.data.draft)
+        .sort((a, b) => b.date - a.date);
+    }
+
+    // Show all posts in development
+    return posts.sort((a, b) => b.date - a.date);
   });
 
   // Collection for projects

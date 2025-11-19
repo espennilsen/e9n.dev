@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "npx tailwindcss -i ./css/styles.css -o ./_site/css/styles.css --minify",
     "watch:css": "npx tailwindcss -i ./css/styles.css -o ./_site/css/styles.css --watch",
-    "build:11ty": "eleventy",
+    "build:11ty": "NODE_ENV=production eleventy",
     "build": "npm run build:11ty && npm run build:css",
     "dev": "npm run build:css && npm-run-all --parallel watch:css watch:11ty",
     "watch:11ty": "eleventy --serve",
