@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} - {% endif %}e9n.dev</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 <body class="min-h-screen flex flex-col bg-background text-text transition-colors duration-300">
 
@@ -106,6 +108,89 @@
       menuIcon.classList.toggle('hidden');
       closeIcon.classList.toggle('hidden');
     }
+
+    // GSAP Scroll Animations
+    document.addEventListener('DOMContentLoaded', () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Fade up animation for elements with .animate-fade-up
+      gsap.utils.toArray('.animate-fade-up').forEach((element, index) => {
+        gsap.from(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 60,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          delay: index * 0.1
+        });
+      });
+
+      // Stagger animation for cards/grid items
+      gsap.utils.toArray('.animate-stagger').forEach((container) => {
+        const items = container.children;
+        gsap.from(items, {
+          scrollTrigger: {
+            trigger: container,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 40,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: 'power3.out'
+        });
+      });
+
+      // Scale in animation for images
+      gsap.utils.toArray('.animate-scale').forEach((element) => {
+        gsap.from(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          scale: 0.9,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out'
+        });
+      });
+
+      // Slide in from left
+      gsap.utils.toArray('.animate-slide-left').forEach((element) => {
+        gsap.from(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          x: -60,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out'
+        });
+      });
+
+      // Slide in from right
+      gsap.utils.toArray('.animate-slide-right').forEach((element) => {
+        gsap.from(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          x: 60,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out'
+        });
+      });
+    });
   </script>
 </body>
 </html>
