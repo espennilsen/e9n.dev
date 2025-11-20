@@ -29,7 +29,7 @@ Following this, I spent nearly two years at Helse-Nord IKT as an IT Consultant. 
 
 I learned disaster recovery planning and the importance of seamless technology integration in life-critical scenarios. The experience of supporting healthcare professionals taught me to communicate complex technical concepts clearly. I always prioritize end-user needs in solution design.
 
-My technical journey continued with five and a half years at Atea, one of the Nordic region's leading IT infrastructure providers. I worked as a Consultant delivering solutions directly to enterprise clients. As a billable resource, I was responsible for designing, implementing, and optimizing IT solutions across diverse industry verticals. This included maritime, oil & gas, public sector, and financial services.
+My technical journey continued with five and a half years at Atea, one of the Nordic region's leading IT infrastructure providers. I worked as a Consultant delivering solutions directly to enterprise clients. I was responsible for designing, implementing, and optimizing IT solutions across diverse industry verticals.
 
 This extensive consulting experience taught me to rapidly assess complex technical environments. I learned to identify optimization opportunities and deliver measurable value while managing multiple stakeholder expectations. Working with dozens of different organizations, each with unique challenges and technical stacks, I developed an adaptable problem-solving approach.
 
@@ -87,7 +87,7 @@ On the development side, I work extensively with Next.js and TypeScript for buil
 
 In the AI/ML domain, I've developed expertise with tools like ComfyUI for visual workflow creation. I work with various Flux models for image generation and multiple LLM platforms for natural language processing applications.
 
-My approach to productivity and automation includes developing custom VBA scripts for Excel-based workflows. I create programmatic PowerPoint generation systems that can produce hundreds of customized sales presentations. I build AI-enhanced tools for MEDDPICC methodology implementation.
+My approach to productivity and automation includes developing custom VBA scripts for Excel-based workflows. I create programmatic PowerPoint generation systems that can produce hundreds of customized sales presentations. I'm exploring n8n for workflow automation, identifying use cases where it can save time and automate parts of my daily work and personal life.
 
 This diverse technical portfolio isn't maintained for its own sake. Each technology and tool in my arsenal serves a specific purpose in either solving business problems, enhancing team productivity, or exploring future possibilities for enterprise technology adoption.
 
@@ -103,9 +103,9 @@ I can credibly challenge customer assumptions when necessary. I identify risks t
 
 This consultative approach, grounded in genuine technical understanding and practical experience, builds trust quickly. It enables deeper, more strategic partnerships with customers who value expertise over salesmanship.
 
-As someone who actively shares how Lenovo solutions enhance various sectors, including education (a domain I know intimately from my early career at Tromsø Maritime Skole), I've observed something important. The most impactful sales professionals are those who combine deep technical understanding with strategic business insight and genuine empathy for customer challenges.
+I've observed something important. The most impactful sales professionals are those who combine deep technical understanding with strategic business insight and genuine empathy for customer challenges.
 
-The ability to switch seamlessly between discussing TCO models with CFOs, debating architectural patterns with enterprise architects, and exploring innovation possibilities with CDOs requires not just knowledge. It requires lived experience across these domains.
+The ability to switch seamlessly between discussing TCO models with CFOs, debating architectural patterns with enterprise architects, and exploring innovation possibilities with CTOs requires not just knowledge. It requires lived experience across these domains.
 
 ## Continuous Learning and Development
 
@@ -115,7 +115,7 @@ Like many professionals, I've discovered the practical value of using LLMs as pe
 
 This everyday use of AI tools provides valuable insights into how consumers actually interact with AI technology. I understand both its capabilities and limitations in practical contexts.
 
-My ongoing study of Thai and Spanish languages follows a similar pragmatic approach. I combine traditional learning methods with AI-powered tools for practice and comprehension.
+My ongoing language study follows a similar pragmatic approach. I combine traditional learning methods with AI-powered tools for practice and comprehension.
 
 The discipline developed through completing two bachelor degrees while maintaining full-time employment has evolved into a structured approach to continuous learning. I allocate specific time blocks for technical skill development, industry research, and personal growth activities.
 
@@ -130,8 +130,6 @@ Readers can expect comprehensive explorations of enterprise sales strategy. I fo
 I share practical guides for modern application development. I draw from my experience building production-grade systems while maintaining a full-time sales leadership role.
 
 Leadership perspectives feature prominently. I offer insights from my transition from individual contributor technical roles to sales leadership. This includes lessons learned about team building, performance management, and creating cultures of technical excellence within sales organizations.
-
-Market intelligence posts analyze Nordic and European technology sector trends. I draw from my unique vantage point working across multiple regions and observing patterns in technology adoption, investment priorities, and competitive dynamics.
 
 Career development content addresses strategic approaches to professional evolution in technology. This is particularly relevant for technical professionals considering commercial roles or sales professionals seeking to develop technical credibility.
 
@@ -167,4 +165,4 @@ Welcome to the conversation.
 
 ---
 
-*Current Focus: Developing AI-enhanced MEDDPICC training programs, architecting next-generation data management solutions for enterprise clients, building x10s AI sandbox platform for rapid prototype development, and exploring practical applications of AI in everyday productivity and personal development.*
+*Current Focus: Creating MEDDPICC training programs with AI assistance to accelerate resource development, architecting next-generation data management solutions for enterprise clients, building x10s AI sandbox platform for rapid prototype development, and exploring practical applications of AI in everyday productivity and personal development.*
