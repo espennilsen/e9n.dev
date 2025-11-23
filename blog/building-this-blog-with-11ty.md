@@ -1,16 +1,16 @@
 ---
 layout: post.njk
-title: 'Building This Blog with 11ty and Claude Code'
-excerpt: 'How I went from idea to deployed blog in a few hours using Claude Code, 11ty, and GitHub Pages. Plus lessons learned and what''s coming next.'
+title: "Building This Blog with 11ty and Claude Code"
+excerpt: "How I went from idea to deployed blog in a few hours using Claude Code, 11ty, and GitHub Pages. Plus lessons learned and what's coming next."
 date: 2025-11-19
-category: 'Web Dev'
+category: "Web Dev"
 tags:
   - 11ty
   - Claude Code
   - Web Dev
   - Meta
-readingTime: '6 min read'
-featured: true
+readingTime: "6 min read"
+featured: false
 ---
 
 # Building This Blog with 11ty and Claude Code
