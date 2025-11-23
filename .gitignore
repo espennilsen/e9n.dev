@@ -58,3 +58,6 @@ lerna-debug.log*
 *.log
 .temp/
 .tmp/
+
+# Draft blog posts
+draft.*
