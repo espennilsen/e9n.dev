@@ -75,7 +75,7 @@ permalink: /
     </div>
 
     <div class="grid gap-8">
-      {%- set latestPosts = collections.posts | reverse | limit(3) -%}
+      {%- set latestPosts = collections.posts | limit(3) -%}
       {%- for post in latestPosts -%}
       <article class="group relative grid md:grid-cols-4 gap-6 border-b border-border pb-8 animate-fade-up">
         <div class="md:col-span-1 text-muted font-mono text-sm pt-1">
