@@ -1,4 +1,3 @@
-
 ---
 layout: post.njk
 title: "Managers Win With Agentic AI — Here’s the 3‑Week Plan"
