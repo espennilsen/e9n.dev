@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Meet Espen Nilsen: From Arctic Norway to Enterprise AI Sales Leadership"
+title: "Meet Espen Nilsen: From Arctic Norway to Enterprise Sales Leadership"
 excerpt: "An introduction to my journey from IT infrastructure in Tromsø to leading enterprise sales at Lenovo, while building AI systems and exploring the intersection of technical expertise and business strategy."
 date: 2025-11-23
 category: "Personal"
