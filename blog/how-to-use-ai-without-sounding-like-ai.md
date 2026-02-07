@@ -11,8 +11,6 @@ readingTime: 7 min read
 featured: false
 ---
 
-# How to Use AI Without It Sounding Like AI
-
 You've seen it. The email that's slightly too polished. The LinkedIn post with that weird cadence. The document that uses "delve" and "leverage" three times each. Something feels off, even if you can't immediately say why.
 
 AI-generated content has a smell. People are getting better at detecting it. And when they do, it undermines the whole point of the communication.

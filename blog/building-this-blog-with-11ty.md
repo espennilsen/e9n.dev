@@ -13,8 +13,6 @@ readingTime: "6 min read"
 featured: false
 ---
 
-# Building This Blog with 11ty and Claude Code
-
 I wanted a simple personal blog. No CMS, no database, no unnecessary complexity. Just markdown files and fast-loading pages.
 
 So I spent a few hours with Claude Code and built this.

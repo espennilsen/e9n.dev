@@ -14,8 +14,6 @@ readingTime: "6 min read"
 featured: true
 ---
 
-# Hello, I'm Espen Nilsen
-
 Welcome to my corner of the internet where enterprise sales meets cutting-edge AI development. I'm a Senior Sales Manager at Lenovo, specializing in Data Management solutions across the Nordics, UKI, Benelux, and META regions from my base in Oslo, Norway.
 
 ## Building a Foundation in Enterprise IT

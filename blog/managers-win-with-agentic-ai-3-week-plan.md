@@ -14,8 +14,6 @@ readingTime: "6 min read"
 featured: true
 ---
 
-# Managers Win With Agentic AI: Here’s the 3‑Week Plan
-
 If your role is judged on cycle time, win rates, and risk, agentic AI is a lever you can pull now - provided you manage it like a team, not a toy. This isn’t about a chat box that drafts text. It’s about systems that plan, take actions, and iterate toward an objective, calling approved tools and executing multi‑step work with limited supervision. The payoff shows up when we do what good managers always do: set a clear outcome, define decision rights, orchestrate handoffs, and hold the line on accountability.
 
 Analyst outlooks suggest agents will be embedded across the tools we already use and will augment a meaningful slice of day‑to‑day decisions. That changes “using AI” from an individual trick into a management competency: directing autonomous systems toward measurable business results under explicit guardrails. In other words, this is operational leadership, not prompt engineering.
