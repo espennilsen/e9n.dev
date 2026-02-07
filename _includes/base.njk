@@ -36,6 +36,10 @@
           <span class="text-primary mr-1">{% if page.url == '/about/' %}>{% else %}#{% endif %}</span>
           About
         </a>
+        <a href="/cv/" class="text-sm uppercase tracking-widest font-mono transition-colors {% if page.url == '/cv/' %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
+          <span class="text-primary mr-1">{% if page.url == '/cv/' %}>{% else %}#{% endif %}</span>
+          CV
+        </a>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -68,6 +72,10 @@
       <a href="/about/" class="block text-2xl py-4 font-mono transition-colors {% if page.url == '/about/' %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
         <span class="text-primary mr-1">{% if page.url == '/about/' %}>{% else %}#{% endif %}</span>
         About
+      </a>
+      <a href="/cv/" class="block text-2xl py-4 font-mono transition-colors {% if page.url == '/cv/' %}text-primary font-bold{% else %}text-muted hover:text-text{% endif %}">
+        <span class="text-primary mr-1">{% if page.url == '/cv/' %}>{% else %}#{% endif %}</span>
+        CV
       </a>
     </nav>
   </div>
