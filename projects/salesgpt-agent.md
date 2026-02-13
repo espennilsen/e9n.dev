@@ -2,7 +2,7 @@
 layout: base.njk
 title: 'SalesGPT Agent'
 excerpt: 'An autonomous agent that researches leads and drafts personalized outreach emails using Gemini Pro.'
-date: 2025-01-10
+date: 2025-02-01
 tech:
   - Python
   - LangChain

@@ -102,9 +102,6 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
-  // Pass through copy for static assets - copy source CSS
-  eleventyConfig.addPassthroughCopy('css');
-
   // Pass through copy for static files (images, etc.)
   eleventyConfig.addPassthroughCopy('static');
 

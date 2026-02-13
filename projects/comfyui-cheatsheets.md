@@ -2,7 +2,7 @@
 layout: base.njk
 title: 'ComfyUI Cheatsheet'
 excerpt: 'The comprehensive reference guide for ComfyUI nodes, workflows, and keyboard shortcuts.'
-date: 2024-12-01
+date: 2025-02-03
 tech:
   - Stable Diffusion
   - ComfyUI

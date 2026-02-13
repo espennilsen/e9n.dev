@@ -138,21 +138,25 @@
         });
       });
 
-      // Stagger animation for cards/grid items
+      // Stagger animation for cards/grid items (animate in row pairs)
       gsap.utils.toArray('.animate-stagger').forEach((container) => {
         const items = container.children;
+        const cols = window.innerWidth >= 768 ? 2 : 1; // md:grid-cols-2
         gsap.set(items, { opacity: 1 }); // Ensure visible by default
-        gsap.from(items, {
-          scrollTrigger: {
-            trigger: container,
-            start: 'top 95%',
-            toggleActions: 'play none none none'
-          },
-          y: 20,
-          opacity: 0,
-          duration: 0.4,
-          stagger: 0.08,
-          ease: 'power2.out'
+        Array.from(items).forEach((item, i) => {
+          const rowIndex = Math.floor(i / cols);
+          gsap.from(item, {
+            scrollTrigger: {
+              trigger: container,
+              start: 'top 95%',
+              toggleActions: 'play none none none'
+            },
+            y: 20,
+            opacity: 0,
+            duration: 0.4,
+            delay: rowIndex * 0.08,
+            ease: 'power2.out'
+          });
         });
       });
 
