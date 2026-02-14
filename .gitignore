@@ -59,5 +59,8 @@ lerna-debug.log*
 .temp/
 .tmp/
 
+# Claude
+.claude/
+
 # Draft blog posts
 draft.*
