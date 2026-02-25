@@ -10,7 +10,7 @@ tech:
   - Tailwind CSS
   - Pi Coding Agent SDK
 github: https://github.com/espennilsen/pilot
-image: /static/images/pilot-overview.png
+image: /static/images/projects/pilot-overview.png
 status: live
 featured: true
 ---
