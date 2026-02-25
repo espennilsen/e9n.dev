@@ -41,7 +41,7 @@ permalink: /projects/
                 {% include "icons/github.svg" %}
               </a>
               {%- endif -%}
-              {%- if project.data.status != 'coming-soon' -%}
+              {%- if project.data.link and project.data.status != 'coming-soon' -%}
               <a href="{{ project.data.link }}" class="text-muted hover:text-primary">
                 {% include "icons/external-link.svg" %}
               </a>
