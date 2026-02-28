@@ -59,6 +59,10 @@ lerna-debug.log*
 .temp/
 .tmp/
 
+# Secrets / keys
+*.pem
+*.key
+
 # Claude
 .claude/
 
