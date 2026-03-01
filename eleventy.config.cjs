@@ -81,6 +81,24 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, limit);
   });
 
+  // Slugify filter for tag URLs
+  eleventyConfig.addFilter('slugify', (str) => {
+    return (str || '').toString().toLowerCase().trim()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]+/g, '')
+      .replace(/--+/g, '-');
+  });
+
+  // Collection of all unique tags (excluding Eleventy internal tags)
+  eleventyConfig.addCollection('tagList', (collectionApi) => {
+    const tagSet = new Set();
+    collectionApi.getFilteredByGlob('blog/*.md').forEach(post => {
+      if (process.env.NODE_ENV === 'production' && post.data.draft) return;
+      (post.data.tags || []).forEach(tag => tagSet.add(tag));
+    });
+    return [...tagSet].sort((a, b) => a.localeCompare(b));
+  });
+
   // Collection for blog posts
   eleventyConfig.addCollection('posts', (collectionApi) => {
     const posts = collectionApi.getFilteredByGlob('blog/*.md');

@@ -40,9 +40,9 @@ layout: base.njk
     <h3 class="text-xl font-bold mb-4 text-text">Tags</h3>
     <div class="flex gap-2">
       {%- for tag in tags -%}
-      <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-muted hover:text-text hover:border-muted transition-colors cursor-default">
+      <a href="/blog/tag/{{ tag | slugify }}/" class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-muted hover:text-primary hover:border-primary/50 transition-colors">
         #{{ tag }}
-      </span>
+      </a>
       {%- endfor -%}
     </div>
   </div>
