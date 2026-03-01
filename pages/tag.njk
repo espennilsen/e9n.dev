@@ -48,7 +48,7 @@ eleventyComputed:
       <div class="flex items-center gap-2 mt-6">
         <span class="text-muted">{% include "icons/tag.svg" %}</span>
         {%- for t in post.data.tags -%}
-        <a href="/blog/tag/{{ t | slugify }}/" class="text-xs text-muted hover:text-primary transition-colors">#{{ t }}</a>
+        <a href="/blog/tag/{{ t | slugify }}/" class="text-xs text-primary hover:text-primary/70 transition-colors">#{{ t }}</a>
         {%- endfor -%}
       </div>
     </div>
