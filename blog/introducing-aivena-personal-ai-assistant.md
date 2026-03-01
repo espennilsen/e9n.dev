@@ -5,12 +5,10 @@ excerpt: "I vibe coded a personal AI assistant that remembers everything, manage
 date: 2026-02-14
 category: "AI"
 tags:
-  - AI
-  - Pi
-  - Extensions
-  - Personal Assistant
   - Agentic AI
-  - Vibe Coding
+  - AI
+  - Software Development
+  - Tools
 readingTime: "8 min read"
 featured: true
 ---

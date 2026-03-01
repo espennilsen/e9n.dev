@@ -5,10 +5,10 @@ excerpt: "Anthropic got blacklisted by executive order. If your product runs on 
 date: 2026-02-28
 category: "AI"
 tags:
-  - AI
-  - Software Development
   - Agentic AI
+  - AI
   - Leadership
+  - Software Development
 readingTime: "8 min read"
 featured: false
 ---

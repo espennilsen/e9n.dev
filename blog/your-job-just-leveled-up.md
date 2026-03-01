@@ -5,10 +5,10 @@ excerpt: "Your team is scared AI will replace them. They're not wrong to worry, 
 date: 2026-02-22
 category: "AI"
 tags:
+  - Agentic AI
   - AI
   - Leadership
   - Software Development
-  - Agentic AI
 readingTime: "6 min read"
 featured: false
 ---

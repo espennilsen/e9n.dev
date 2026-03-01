@@ -5,10 +5,10 @@ excerpt: "OpenClaw gives every sales exec a tireless personal assistant. But lik
 date: 2026-02-07
 category: AI
 tags:
-  - AI Integration
-  - Technical Sales
-  - Automation
-  - Security
+  - AI
+  - Leadership
+  - Sales
+  - Tools
 readingTime: 8 min read
 featured: false
 draft: false

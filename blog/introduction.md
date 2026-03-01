@@ -7,9 +7,6 @@ category: "Personal"
 tags:
   - AI
   - Sales
-  - Technology
-  - Innovation
-  - Introduction
 readingTime: "6 min read"
 featured: true
 ---

@@ -5,8 +5,8 @@ excerpt: "I built 18 extensions by talking to a coding agent. The ones with spec
 date: 2026-02-21
 category: "AI"
 tags:
-  - AI
   - Agentic AI
+  - AI
   - Productivity
   - Software Development
 readingTime: "7 min read"

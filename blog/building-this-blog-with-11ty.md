@@ -5,10 +5,8 @@ excerpt: "How I went from idea to deployed blog in a few hours using Claude Code
 date: 2025-11-19
 category: "Web Dev"
 tags:
-  - 11ty
-  - Claude Code
-  - Web Dev
-  - Meta
+  - Software Development
+  - Tools
 readingTime: "6 min read"
 featured: false
 ---

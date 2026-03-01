@@ -5,11 +5,10 @@ excerpt: "A practical, outcome‑first 3‑week plan for managers to turn agenti
 date: 2026-01-20
 category: "Playbook"
 tags:
-  - AI
-  - Sales
-  - Management
   - Agentic AI
-  - Workflow
+  - AI
+  - Leadership
+  - Sales
 readingTime: "6 min read"
 featured: true
 ---

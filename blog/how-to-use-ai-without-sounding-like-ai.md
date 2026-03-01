@@ -5,8 +5,8 @@ excerpt: "AI-generated content has a smell. Here's how to use tools like Copilot
 date: 2025-12-11
 category: AI
 tags:
-  - AI Integration
-  - Content Creation
+  - AI
+  - Productivity
 readingTime: 7 min read
 featured: false
 ---
