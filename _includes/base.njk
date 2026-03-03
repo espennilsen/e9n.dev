@@ -3,7 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} - {% endif %}e9n.dev</title>
+
+  {#- SEO: Compute page metadata -#}
+  {% set pageTitle = title + " — e9n.dev" if title and title != "Home" else "e9n.dev — AI, Sales & Self-Growth by Espen Nilsen" %}
+  {% set pageDescription = (description or excerpt or "Exploring the intersection of AI, Sales, and Self-Growth. Written by Espen Nilsen.") | truncate(160) %}
+  {% set pageUrl = "https://e9n.dev" + page.url %}
+  {% set pageImage = "https://e9n.dev" + (ogImage or "/static/images/espen.png") %}
+  {% set isPost = true if category else false %}
+
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <link rel="canonical" href="{{ pageUrl }}">
+  <meta name="author" content="Espen Nilsen">
+
+  {#- Open Graph -#}
+  <meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:url" content="{{ pageUrl }}">
+  <meta property="og:site_name" content="e9n.dev">
+  <meta property="og:image" content="{{ pageImage }}">
+  <meta property="og:locale" content="en_US">
+  {% if isPost %}
+  <meta property="article:published_time" content="{{ page.date | date }}">
+  <meta property="article:author" content="Espen Nilsen">
+  {% for tag in tags %}<meta property="article:tag" content="{{ tag }}">
+  {% endfor %}
+  {% endif %}
+
+  {#- Twitter Card -#}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@espennilsen">
+  <meta name="twitter:creator" content="@espennilsen">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
+  <meta name="twitter:image" content="{{ pageImage }}">
+
+  {#- JSON-LD Structured Data -#}
+  {% if isPost %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ title }}",
+    "description": "{{ pageDescription }}",
+    "datePublished": "{{ page.date | date }}",
+    "author": {
+      "@type": "Person",
+      "name": "Espen Nilsen",
+      "url": "https://e9n.dev/about/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Espen Nilsen",
+      "url": "https://e9n.dev"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ pageUrl }}"
+    },
+    "url": "{{ pageUrl }}"
+  }
+  </script>
+  {% elif page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "e9n.dev",
+    "url": "https://e9n.dev",
+    "description": "{{ pageDescription }}",
+    "author": {
+      "@type": "Person",
+      "name": "Espen Nilsen",
+      "jobTitle": "Sr. Sales Manager",
+      "worksFor": { "@type": "Organization", "name": "Lenovo" },
+      "url": "https://e9n.dev/about/",
+      "sameAs": [
+        "https://github.com/espennilsen",
+        "https://x.com/espennilsen",
+        "https://www.linkedin.com/in/espenan/"
+      ]
+    }
+  }
+  </script>
+  {% endif %}
+
   <link rel="stylesheet" href="/css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>

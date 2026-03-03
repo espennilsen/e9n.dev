@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "The Spec Is the Product"
+subtitle: "How to Write Specs for AI Coding Agents That Ship on the First Try"
 excerpt: "I built 18 extensions by talking to a coding agent. The ones with specs shipped clean. The ones without specs shipped twice. Here's the framework I use now."
 date: 2026-02-21
 category: "AI"

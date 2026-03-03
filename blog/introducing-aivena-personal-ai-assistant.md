@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Introducing Aivena: A Vibe Coded AI Assistant"
+subtitle: "How I Built a Personal AI Assistant Using Vibe Coding and Open Source Extensions"
 excerpt: "I vibe coded a personal AI assistant that remembers everything, manages my contacts, tracks my calendar, chats with me on Telegram, and runs background jobs. Every extension, every feature — built by talking to the agent."
 date: 2026-02-14
 category: "AI"

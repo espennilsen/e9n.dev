@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "OpenClaw for Sales: Your 24/7 Assistant That Needs a Badge and a Background Check"
+subtitle: "Using Autonomous AI Agents for Enterprise Sales — Opportunities, Costs, and Security Risks"
 excerpt: "OpenClaw gives every sales exec a tireless personal assistant. But like any new hire with access to your systems, you need to onboard it carefully. Here's how to make it work — and how to keep it from becoming a liability."
 date: 2026-02-07
 category: AI

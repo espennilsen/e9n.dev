@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Your Job Just Leveled Up"
+subtitle: "How AI Is Changing Software Development Roles — From Writing Code to Directing Systems"
 excerpt: "Your team is scared AI will replace them. They're not wrong to worry, but the real shift isn't replacement. It's a layer of abstraction. Developers are becoming managers of systems, not writers of code."
 date: 2026-02-22
 category: "AI"

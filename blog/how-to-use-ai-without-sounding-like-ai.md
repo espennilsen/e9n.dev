@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "How to Use AI Without It Sounding Like AI"
+subtitle: "Practical Tips for Editing AI-Generated Content to Sound Authentic"
 excerpt: "AI-generated content has a smell. Here's how to use tools like Copilot to speed up your work while still sounding like yourself."
 date: 2025-12-11
 category: AI

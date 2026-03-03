@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "The AI Stack Is Now a Political Dependency"
+subtitle: "Why Model-Agnostic AI Architecture Is Now a Business Requirement"
 excerpt: "Anthropic got blacklisted by executive order. If your product runs on Claude, your entire stack just became a federal liability overnight. Here's what model-agnostic architecture actually looks like."
 date: 2026-02-28
 category: "AI"

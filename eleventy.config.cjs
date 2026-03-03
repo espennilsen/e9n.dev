@@ -122,6 +122,7 @@ module.exports = function(eleventyConfig) {
 
   // Pass through copy for static files (images, etc.)
   eleventyConfig.addPassthroughCopy('static');
+  eleventyConfig.addPassthroughCopy('robots.txt');
 
   // Don't delete CSS from output on rebuild
   eleventyConfig.setServerOptions({
@@ -141,6 +142,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.ignores.add('types.ts');
   eleventyConfig.ignores.add('data.ts');
   eleventyConfig.ignores.add('README.md');
+  eleventyConfig.ignores.add('AGENTS.md');
   eleventyConfig.ignores.add('blog-posts.njk');
 
   return {
