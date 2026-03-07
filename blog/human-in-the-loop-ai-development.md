@@ -148,4 +148,4 @@ That's the human in the loop. Not writing code. Not reviewing syntax. Making the
 
 ---
 
-*[Pi](https://github.com/mariozechner/pi-coding-agent) and [Aivena](https://aivena.dev) are open source. pi-code-review will be once it's stable. The [Pilot](https://github.com/espennilsen/pilot) project that ties them together is also open source. The workflow works because the tools are separated, not because they're integrated.*
+*[Pi](https://github.com/mariozechner/pi-coding-agent) is open source. [Aivena](https://aivena.dev) is available at [aivena.dev](https://aivena.dev). pi-code-review will be open source once it's stable. The [Pilot](https://github.com/espennilsen/pilot) project that ties them together is also open source. The workflow works because the tools are separated, not because they're integrated.*
