@@ -74,7 +74,7 @@ This is the human-in-the-loop part. I read every review comment. Some are spot-o
 
 For legitimate blockers, I go back to Pi and say "fix the issue on line 47 of rebase-editor.ts." The agent pushes a fix to the same branch. The review bot runs again, but this time it only looks at the new commits. It doesn't re-review the entire PR. It doesn't re-raise resolved issues. It checks whether the fix actually addressed the problem and whether the new code introduced anything new.
 
-For PR #1 (the git conflict resolution feature), the review bot found a real issue with how I was handling stale rebase state. I addressed it, and the fix became PR #2: "conflict resolution follow-ups from PR #1 review." The review bot reviewed that PR too. Clean pass. Merged.
+For PR #9, the review bot found a real issue with how I was handling stale rebase state during interactive rebase. I addressed it, pushed a fix to the same branch, and the bot ran again. Clean pass. Merged.
 
 ### Step 5: Aivena keeps the context
 
@@ -128,7 +128,7 @@ If you want to try something similar, here's the minimum:
 
 **For the coding agent,** [Pi](https://github.com/mariozechner/pi-coding-agent) is open source and free. Install it, point it at a project, and start describing what you want. Write an AGENTS.md that documents your project's architecture and conventions. The agent reads it and follows it.
 
-**For the review bot,** pi-code-review is something I built for my own use and plan to open source once it's stable. It needs a server to run on (I use a VPS), a GitHub webhook, and API keys. The setup is more involved, but the payoff is automatic reviews on every PR. If you want something off-the-shelf, SaaS options like [CodeRabbit](https://coderabbit.ai), [Ellipsis](https://www.ellipsis.dev), or [Codium](https://www.codium.ai) offer similar automated PR reviews without the self-hosting overhead. If all of that is too heavy, you can get 80% of the value by just asking Pi to review your diffs before you push.
+**For the review bot,** pi-code-review is something I built for my own use and plan to open source once it's stable. It needs a server to run on (I use a VPS), a GitHub webhook, and API keys. The setup is more involved, but the payoff is automatic reviews on every PR. If you want something off-the-shelf, SaaS options like [CodeRabbit](https://coderabbit.ai), [Ellipsis](https://www.ellipsis.dev), or [Qodo](https://www.qodo.ai) offer similar automated PR reviews without the self-hosting overhead. If all of that is too heavy, you can get 80% of the value by just asking Pi to review your diffs before you push.
 
 **For the personal assistant,** [Aivena](https://aivena.dev) is the full version, but you can start with just the [pi-memory](https://github.com/espennilsen/pi/tree/main/extensions/pi-memory) extension for persistent context across sessions. Add more extensions as you need them.
 
