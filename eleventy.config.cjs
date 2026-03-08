@@ -144,6 +144,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.ignores.add('README.md');
   eleventyConfig.ignores.add('AGENTS.md');
   eleventyConfig.ignores.add('blog-posts.njk');
+  eleventyConfig.ignores.add('docs/**');
 
   return {
     dir: {

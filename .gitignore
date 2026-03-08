@@ -66,5 +66,8 @@ lerna-debug.log*
 # Claude
 .claude/
 
+# Pi agent
+.pi/
+
 # Draft blog posts
 draft.*

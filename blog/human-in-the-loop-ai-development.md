@@ -3,7 +3,7 @@ layout: post.njk
 title: "Three AIs Walk Into a Codebase"
 subtitle: "How I Use a Coding Agent, a Review Bot, and a Personal Assistant for Human-in-the-Loop Development"
 excerpt: "I build features by talking to one AI, get them reviewed by a second AI, and coordinate everything through a third. The human in the loop isn't writing code. He's making decisions."
-date: 2026-03-10
+date: 2026-03-07
 category: "AI"
 tags:
   - Agentic AI
