@@ -26,7 +26,7 @@ Here's the shortlist:
 
 **NVIDIA** released [Nemotron 3 Super](https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/), a 120-billion-parameter open-weight model with only 12 billion active parameters per token. It's a [hybrid of three architectures](https://venturebeat.com/technology/nvidias-new-open-weights-nemotron-3-super-combines-three-different): Mamba (state-space model), Transformer attention, and Mixture-of-Experts routing. Specifically designed for multi-agent systems. They also announced NemoClaw, an open-source platform for deploying agents. They released 10 trillion tokens of training data alongside the model.
 
-**Stanford** released [OpenJarvis](https://scalingintelligence.stanford.edu/blogs/openjarvis/), a local-first agent framework from the lab behind FlashAttention. Five composable primitives: Intelligence, Engine, Agents, Tools & Memory, Learning. The "Learning" part is novel. It captures structured trace data on-device and uses it to continuously improve the model without cloud dependencies. It supports MCP and A2A protocols natively. [Source on GitHub](https://github.com/open-jarvis/OpenJarvis).
+**Stanford** released [OpenJarvis](https://scalingintelligence.stanford.edu/blogs/openjarvis/), a local-first agent framework from the lab behind FlashAttention. Five composable primitives: Intelligence, Engine, Agents, Tools & Memory, Learning. The "Learning" part is novel. It captures structured trace data on-device and uses it to continuously improve the model without cloud dependencies. It supports both MCP and A2A protocols. [Source on GitHub](https://github.com/open-jarvis/OpenJarvis).
 
 **Anthropic** renamed the Claude Code SDK to the [Claude Agent SDK](https://letsdatascience.com/blog/claude-agent-sdk-tutorial) and launched [Claude Code Review](https://thenewstack.io/anthropic-launches-a-multi-agent-code-review-tool-for-claude-code/), a multi-agent system for PR review.
 
@@ -48,7 +48,7 @@ This is the same pattern we've seen in every infrastructure cycle. CPUs commodit
 
 Strip away the marketing and there are four layers that matter.
 
-The first is tool integration: how the agent interacts with the outside world. Native computer use is one approach: give the model a screen and a mouse. MCP (Model Context Protocol) is another: standardized tool definitions that any model can call. The industry is converging on MCP as the standard, which is why most agent frameworks now support it natively.
+The first is tool integration: how the agent interacts with the outside world. Native computer use is one approach: give the model a screen and a mouse. MCP (Model Context Protocol) was supposed to be another: standardized tool definitions that any model can call. But there's growing skepticism about whether MCP is the right abstraction. More agents are just shelling out to CLIs directly. It's less elegant, but CLIs are battle-tested, composable, and already exist for almost everything. The tool integration layer is less settled than it looked six months ago.
 
 Then there's orchestration. A single agent with a single model is useful but limited. Real workflows involve multiple agents with different roles: a builder, a reviewer, a planner, a researcher. The orchestration layer manages who talks to whom, how context flows between agents, and when a human needs to step in. This is where most of the action is right now.
 
@@ -66,7 +66,7 @@ When a review bot runs three rounds on a large PR, the token cost adds up fast. 
 
 Every agent call in my setup is a network round trip to Anthropic's API. I'm heavily dependent on Claude for everything: coding, review, coordination. If I could run a local model for quick decisions (lint checks, simple refactors, boilerplate generation) and escalate to Claude only for complex reasoning, the workflow would get faster and cheaper. I'm not there yet, but between local-first frameworks and efficient open-weight models, this architecture is becoming feasible for the first time.
 
-Every time I connect a new tool to my agent setup, I'm also writing custom integration code. MCP is slowly fixing this. A2A (Agent-to-Agent protocol) is starting to fix the inter-agent communication problem. The less custom plumbing I have to maintain, the more time I spend on the actual product.
+Every time I connect a new tool to my agent setup, I'm also writing custom integration code. MCP was supposed to fix this, but the jury is still out. In practice, a lot of agents are just calling CLIs and parsing the output. It's crude but it works. A2A (Agent-to-Agent protocol) is starting to fix the inter-agent communication side. The less custom plumbing I have to maintain, the more time I spend on the actual product.
 
 And open weights matter for self-hosting. I run my review bot on my own infrastructure because my code shouldn't leave my network. NVIDIA releasing Nemotron 3 Super with [open weights and 10 trillion tokens of training data](https://dataconomy.com/2026/03/12/nvidia-launches-120b-parameter-nemotron-3-super-open-model/) isn't charity. It's a strategic play to make NVIDIA hardware the default for self-hosted agent deployments. But the effect is the same: I get a frontier-quality model I can run on my own terms.
 
@@ -80,7 +80,7 @@ An efficient open model on local or edge handles high-frequency, low-complexity 
 
 An agent framework sits in between, managing orchestration, tool integration, and memory. There's no shortage of options: LangGraph, CrewAI, the Claude Agent SDK, and now local-first entries like OpenJarvis. The framework manages the routing between local and cloud models.
 
-And standard protocols tie it together. MCP for tool access, A2A for agent communication. These are the HTTP and TCP/IP of the agent era. Boring plumbing that makes everything else possible.
+And standard protocols are supposed to tie it together. A2A for agent communication looks promising. MCP for tool access is more uncertain. If agents keep reaching for CLIs instead of MCP servers, the "standard protocol" for tool integration might end up being `stdout`.
 
 This is a hybrid architecture. Not pure cloud, not pure local. The smart routing between them, knowing which tasks need frontier intelligence and which don't, is the value layer that agent frameworks compete on.
 
