@@ -45,13 +45,13 @@ If you've been following the agent ecosystem, there's a clear pattern now. Three
 
 **MCP** gives agents tools. It's how an agent reads a database, calls an API, or interacts with your systems. The hands.
 
-**A2A** lets agents talk to each other. My research agent hands off findings to my writing agent, which coordinates with my review agent. The voice.
+**A2A** lets agents talk to each other. My research agent hands off findings to my editor agent, which coordinates with my review agent. The voice.
 
 **MPP, UCP, and OWS** give agents money. They can discover products, evaluate options, negotiate terms, and pay. The wallet.
 
 Tools, communication, money. That's the stack. As of this week, all three layers have working implementations backed by major companies. [Over 100 enterprises](https://dev.to/pockit_tools/mcp-vs-a2a-the-complete-guide-to-ai-agent-protocols-in-2026-30li) have signed on as supporters.
 
-I run five specialist agents connected via A2A. A researcher, a writer, a reviewer, a coordinator, and a personal assistant. The commerce layer is the natural next step. When my research agent finds a SaaS tool that fits a workflow, the path from "this looks useful" to "here's your receipt" is about to get very short.
+I run five specialist agents connected via A2A. A researcher, an editor, a reviewer, a coordinator, and a personal assistant. The commerce layer is the natural next step. When my research agent finds a SaaS tool that fits a workflow, the path from "this looks useful" to "here's your receipt" is about to get very short.
 
 ## SEO Is Dead. ACO Is Born.
 
