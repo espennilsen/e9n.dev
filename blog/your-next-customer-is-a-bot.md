@@ -77,7 +77,7 @@ I manage sales teams. I've spent the last decade in rooms where deals happen thr
 
 **The qualification layer changes.** Today a prospect fills out a form, maybe has a discovery call. Tomorrow their AI agent pre-qualifies vendors by querying your API, comparing your specs against requirements, and filtering you in or out before a human sees your name. If your data isn't agent-accessible, you're filtered out at step one.
 
-**The negotiation layer changes.** Forrester predicts 20% of B2B sellers will face agent-led quote negotiations by end of 2026. An AI agent negotiating a quote doesn't respond to rapport. It responds to data. Price benchmarks, competitor offers, volume discount structures, contract flexibility. The negotiation becomes algorithmic.
+**The negotiation layer changes.** Forrester [predicts](https://www.forrester.com/predictions/b2b-2026/) 20% of B2B sellers will face agent-led quote negotiations by end of 2026. An AI agent negotiating a quote doesn't respond to rapport. It responds to data. Price benchmarks, competitor offers, volume discount structures, contract flexibility. The negotiation becomes algorithmic.
 
 **The relationship layer survives, but shifts.** The human relationship still matters for complex, high-stakes deals. But it kicks in later. The agent handles the first 70% of the funnel. Discovery, qualification, comparison, initial negotiation. The human gets the last 30%. Trust building, customization, strategic alignment. You're still closing. But the top of your funnel is automated.
 
